@@ -4,7 +4,7 @@ import com.br.springbootparty.constants.IdeologyEnum;
 import com.br.springbootparty.dto.request.PartyRequestDTO;
 import com.br.springbootparty.dto.response.PartyResponseDTO;
 import com.br.springbootparty.entiteis.PartyEntity;
-import com.br.springbootparty.hanlde.exception.IdeologyException;
+import com.br.springbootparty.exception.IdeologyException;
 import com.br.springbootparty.repository.PartyRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;

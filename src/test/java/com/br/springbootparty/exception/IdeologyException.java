@@ -1,4 +1,5 @@
-package com.br.springbootparty.hanlde.exception;
+package com.br.springbootparty.exception;
+
 
 public class IdeologyException extends Throwable {
 
