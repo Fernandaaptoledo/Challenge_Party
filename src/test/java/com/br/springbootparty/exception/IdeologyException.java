@@ -1,6 +1,14 @@
 package com.br.springbootparty.exception;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-public class IdeologyException extends Throwable {
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class IdeologyException extends RuntimeException {
+
+    private String message;
 
 }
