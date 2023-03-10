@@ -35,7 +35,4 @@ public class PartyEntity {
         private LocalDate foundationDate;
 
 
-
-
-
 }
