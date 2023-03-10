@@ -17,8 +17,8 @@ public class PartyController {
     private final PartyService partyService;
 
     @PostMapping("/associates")
-    public ResponseEntity<PartyResponseDTO> save(@RequestBody PartyRequestDTO carRequestDTO){
-        PartyResponseDTO partyResponseDTO = partyService.save();
+    public ResponseEntity<PartyResponseDTO> save(@RequestBody PartyRequestDTO partyRequestDTO){
+        PartyResponseDTO partyResponseDTO = partyService.save(partyRequestDTO);
         return ResponseEntity.ok(partyResponseDTO);
     }
 
