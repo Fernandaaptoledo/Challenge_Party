@@ -1,5 +1,6 @@
 package com.br.springbootparty.exception;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class IdeologyException extends RuntimeException {
-
+public class PoliticalOfficeException extends RuntimeException {
+//    public PoliticalOfficeException(Object p0) {
+//    }
     private String message;
-
 }

@@ -10,6 +10,8 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class PartyService{
@@ -29,4 +31,8 @@ public class PartyService{
         partyRepository.save(partyEntity);
         return modelMapper.map(partyEntity, PartyResponseDTO.class);
     }
+
+    public List<PartyResponseDTO> findAllParty() {
+    }
+
 }

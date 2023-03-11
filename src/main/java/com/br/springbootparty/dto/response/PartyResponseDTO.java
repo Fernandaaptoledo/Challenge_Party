@@ -21,4 +21,6 @@ public class PartyResponseDTO {
 
     private LocalDate foundationDate;
 
+
+
 }

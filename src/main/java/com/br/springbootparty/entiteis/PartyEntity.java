@@ -19,7 +19,7 @@ public class PartyEntity {
 
          @Id
          @Column(name = "ID_PARTY", nullable = false)
-         @GeneratedValue()
+         @GeneratedValue(strategy = GenerationType.AUTO)
          private UUID idParty = UUID.randomUUID();
 
         @Column(name = "IDEOLOGY", nullable = false)
