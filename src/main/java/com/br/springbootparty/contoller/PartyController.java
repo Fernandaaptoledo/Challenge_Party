@@ -32,5 +32,5 @@ public class PartyController {
     public  PartyRequestDTO findByIdParty(@PathVariable("id")UUID idParty) {
         return (PartyRequestDTO) partyService.findAllParty(); }
 
-    
+
 }
