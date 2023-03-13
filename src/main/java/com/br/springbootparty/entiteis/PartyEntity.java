@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -18,7 +19,7 @@ import java.util.UUID;
 public class PartyEntity {
 
          @Id
-         @Column(name = "ID_PARTY", nullable = false)
+         @Column(name = "ID_PARTY", updatable = false, unique = true, nullable = false)
          @GeneratedValue(strategy = GenerationType.AUTO)
          private UUID idParty = UUID.randomUUID();
 
@@ -34,5 +35,7 @@ public class PartyEntity {
         @Column(name = "FOUNDATION_DATE", nullable = false)
         private LocalDate foundationDate;
 
+        @OneToMany(mappedBy = "party")
+        private List<AssociateEntity> associate;
 
 }

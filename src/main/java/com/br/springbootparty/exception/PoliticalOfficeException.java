@@ -11,7 +11,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PoliticalOfficeException extends RuntimeException {
-//    public PoliticalOfficeException(Object p0) {
-//    }
+    public PoliticalOfficeException(Object p0) {
+    }
     private String message;
+
 }

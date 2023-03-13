@@ -17,8 +17,8 @@ import java.util.UUID;
 public class AssociateEntity {
 
     @Id
-    @Column(name = "ID_ASSOCIATE", nullable = false)
-    @GeneratedValue()
+    @Column(name = "ID_ASSOCIATE", updatable = false, unique = true, nullable = false)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idAssociate = UUID.randomUUID();
 
     @Column(name = "POLITICAL_OFFICE", nullable = false)
@@ -32,5 +32,6 @@ public class AssociateEntity {
 
     @Column(name = "BIRTHDAY", nullable = false)
     private LocalDate birthday;
+
 
 }

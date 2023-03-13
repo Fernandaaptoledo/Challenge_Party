@@ -2,6 +2,7 @@ package com.br.springbootparty.dto.request;
 
 
 import com.br.springbootparty.constants.IdeologyEnum;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;
 import lombok.Data;
 
@@ -17,6 +18,7 @@ public class PartyRequestDTO {
 
     private String acronym;
 
+    @JsonFormat(pattern = "yyyy/MM/dd")
     private LocalDate foundationDate;
 
 }
