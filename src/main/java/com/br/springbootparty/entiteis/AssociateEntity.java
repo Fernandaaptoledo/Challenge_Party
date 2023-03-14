@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Entity
 @Table(name = "ASSOCIATE")
@@ -17,9 +16,9 @@ import java.util.UUID;
 public class AssociateEntity {
 
     @Id
-    @Column(name = "ID_ASSOCIATE", updatable = false, unique = true, nullable = false)
+    @Column(name = "ID_ASSOCIATE", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID idAssociate = UUID.randomUUID();
+    private String idAssociate;
 
     @Column(name = "POLITICAL_OFFICE", nullable = false)
     private PoliticalOfficeEnum politicalOffice;
@@ -32,6 +31,7 @@ public class AssociateEntity {
 
     @Column(name = "BIRTHDAY", nullable = false)
     private LocalDate birthday;
+
 
 
 }

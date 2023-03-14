@@ -10,4 +10,5 @@ public class SpringbootPartyApplication {
 		SpringApplication.run(SpringbootPartyApplication.class, args);
 	}
 
+
 }

@@ -5,12 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Data
 @Builder
 public class AssociateResponseDTO {
-    private UUID idAssociate;
+    private Long idAssociate;
 
     private PoliticalOfficeEnum politicalOffice;
 
