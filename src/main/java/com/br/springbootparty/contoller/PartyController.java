@@ -39,6 +39,6 @@ public class PartyController {
         return null;
     }
 
-    
+
 
 }
