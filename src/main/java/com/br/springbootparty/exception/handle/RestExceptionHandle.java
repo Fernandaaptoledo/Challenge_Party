@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class RestExceptionHandle {
 
-
     @ExceptionHandler(IdeologyException.class)
     public final ResponseEntity<Object> handleIdeologyException(){
         IdeologyException ideologyException = new IdeologyException("An error ocurr");

@@ -30,6 +30,4 @@ public class PartyService{
         return modelMapper.map(partyEntity, PartyResponseDTO.class);
     }
 
-
-
 }
